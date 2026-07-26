@@ -1,73 +1,105 @@
-# React + TypeScript + Vite
+🔐 Random Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive password generator built with **React.js** that helps users create secure, customizable passwords instantly. Users can control the password length and choose whether to include uppercase letters, lowercase letters, numbers, and special characters.
 
-Currently, two official plugins are available:
+ ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🔐 Generate strong random passwords
+* 📏 Adjustable password length
+* 🔠 Include uppercase letters
+* 🔡 Include lowercase letters
+* 🔢 Include numbers
+* 🔣 Include special symbols
+* ⚡ Instant password regeneration
+* 📋 One-click copy to clipboard
+* 📱 Responsive UI for desktop and mobile
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* JavaScript
+* CSS / Tailwind CSS (if used)
+* React Hooks
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ 🚀 Installation
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Clone the repository:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/xaniar8996/SecureSho.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Go to the project folder:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd password-generator
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+ 📁 Project Structure
+
+```
+src/
+│
+├── assets/
+├── components/
+├── pages/
+├── App.tsx
+└── main.tsx
+```
+
+ ⚙️ How It Works
+
+The application dynamically builds a pool of available characters based on the user's selected options. It then randomly selects characters from that pool until the desired password length is reached.
+
+Whenever the user changes:
+
+* Password length
+* Uppercase option
+* Lowercase option
+* Numbers option
+* Symbols option
+
+the password is regenerated automatically using React's `useEffect`.
+
+ 📚 Concepts Practiced
+
+* React Hooks
+* State Management
+* Conditional Logic
+* Random Number Generation
+* String Manipulation
+* Component-Based Architecture
+* TypeScript Basics
+
+## 💡 Future Improvements
+
+* Password strength meter
+* Exclude similar characters (O, 0, I, l)
+* Prevent duplicate characters
+* Generate multiple passwords at once
+* Save password history
+* Dark / Light mode
+* Keyboard shortcuts
+* Animated UI
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome.
+
+---
+
+Made with ❤️ by **Xaniar Naghavian
