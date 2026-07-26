@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Vazirmatn'; /* بهتر است نام فونت را داخل کوتیشن قرار دهید */
+  src: url("../Fonts/Vazirmatn-FD-Regular.woff2") format("woff2"); /* Regular */
+  font-weight: 400; /* وزن 400 معمولاً برای Regular است */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url("../Fonts/Vazirmatn-FD-Medium.woff2") format("woff2"); /* Medium */
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url("../Fonts/Vazirmatn-FD-SemiBold.woff2") format("woff2"); /* SemiBold */
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url("../Fonts/Vazirmatn-FD-Bold.woff2") format("woff2"); /* Bold */
+  font-weight: 700; /* یا 800 */
+  font-style: normal;
+  font-display: swap;
+}

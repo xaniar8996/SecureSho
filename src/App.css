@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "assets/Style/FontFace.css";
+@import "assets/Style/InputRange.css";
+
+@theme {
+    --color-primary: #8b5cf6;
+    --color-secondary: #22d3ee;
+    --color-background: #0a0a0a;
+    --color-surface: #111827;
+  }
+
+  body {
+    font-family: 'Vazirmatn', sans-serif; /* مستقیماً از نام فونت استفاده کنید */
+    direction: rtl;
+}
